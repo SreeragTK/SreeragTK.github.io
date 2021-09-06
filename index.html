@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<html>
+<title> Search for a better perovskite solar cell using ML </title>
+
+<head>
+  <link rel="stylesheet" href="cs460.css">
+
+</head> 
+
+<body>
+<header>
+<h1 style="text-align:right"> <u> Search for a better perovskite solar cell using ML </u></h1> <br> 
+<br>
+
+<h3 style="text-align:right"> <b>Sharun P Shaji (1711125)<br>Sreerag T K(1811158)</b> </h3>
+</header>
+<hr>
+<body>
+<h2> Project Proposal </h2> <br>
+
+<h3> Introduction </h3>
+
+<p> 
+Solar cells are the future of energy, existing technology is based on silicon or germanium the so-called conventional semiconductors. They are
+very hard to manufacture as well as it's very expensive to fabricate. Perovskite can replace this if we use 
+Perovskite instead of conventional semiconductors, it'll drastically reduce the effort for making solar cells.
+</p>
+
+
+
+<p> The Perovskites are crystals with a specific crystal structure given by, <br>$$ ABX_{3} $$<br>
+<img src ="imgp.png" class="center" style="width:500px;height:300px;"><br> A & B are cations, and 
+X is an anion. So, we can see that there can be an enormous number of combinations which yields a Perovskite crystal,
+but it's impossible to try all these combinations are get the properties that we need.
+</p>
+
+<p> In this project, we are concentrating on bandgap energy denoted by <i> Eg </i>, which determines the efficiency 
+of the solar cell, and the color of light emitted if used as a LED. We also want to find a substitute of Lead (Pb),
+which is the B cation in most of the Perovskites we are using today. I think I don't need to explain why because we all
+know that Pb is a heavy metal and the environmental issues it causes. On a side note, from the Perovskite solar cells,
+the Pb which reaches the ground is not at all significant it's similar to how much Pb we will get exposed if we are
+walking on an asphalt road barefoot. Hence finding Pb-free Perovskite is not an immediate goal.
+</p>
+
+
+
+<h3> Goals </h3>
+
+Our main objective is <u>to find the best possible combination of materials that makes a better
+candidate for a Perovskite based solar cell or a LED </u>. For this project, we are only concentrating on the solar
+cell, if time permits we'll also work on the LED. To attain the main goal we have to complete 
+some milestones which are listed below,
+<ol>
+<li> Make a big enough data set by going through literature and the data used in some of the references (data set consists of properties of elements and <i>Eg</i> will
+be the label
+<li> Find out which features to use. (feature engineering)
+<li> Train the machine to predict the label, which is <i>Eg</i>. (Neural Network and Linear regression)
+<li> Then try all possible combinations and come up with the closest to the desired value of <i>Eg</i>
+</ol>
+<p> <b>By midway we are hoping we will be able to start on woking on training the machine to
+perdict the <i>Eg</i> </b> </p>
+
+
+<h3> Work Distribution </h3>
+
+There are five core tasks in the common ML workflow :-
+<ol> 
+<li> Getting Data
+<li> Clean,  Prepare & Manipulate Data
+<li> Train Model
+<li> Test Model
+<li> Improve
+</ol>
+
+For Training and Testing the data we will be focusing on two class of Algorithms, Linear Regression and Neural Networks. Here Neural Network(ANN) part will be done by Sharun and the Linear Regression part will be done by Sreerag. And  and for the rest we will be doing them together
+
+
+<h3> References </h3>
+
+<ol>
+<li> <a href="https://doi.org/10.1039/D1RA03117A"> Bandgap tuning strategy by cations and halide ions of lead halide perovskites learned from machine learning</a>
+<li> <a href="https://www.nature.com/articles/srep19375"> Machine learning bandgaps of double perovskites </a>
+<li> <a href="https://www.nature.com/articles/s41524-021-00495-8"> Machine learning for perovskite materials design and discovery </a>
+<li> <a href="https://doi.org/10.1038/s41524-019-0177-0"> Identifying Pb-free perovskites for solar cells by machine learning</a>
+</ol>
+
+</body>
+</html>
